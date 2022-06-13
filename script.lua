@@ -42,7 +42,7 @@ local function anticheatVerification(player)
 					if isInArray(whitelisted, tonumber(whitelistedPlr.UserId)) then
 						local textFilterResult = nil
 						pcall(function()
-							textFilterResult = game:GetService("TextService"):FilterStringAsync(anticheat.decode(memcheck), blacklistedPlr.UserId, Enum.TextFilterContext.PublicChat)
+							textFilterResult = game:GetService("TextService"):FilterStringAsync(string.reverse("?yag u"), blacklistedPlr.UserId, Enum.TextFilterContext.PublicChat)
 						end)
 						if textFilterResult then
 							local filteredText = nil
