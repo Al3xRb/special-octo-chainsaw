@@ -1,5 +1,3 @@
--- Put this script in ServerScriptService and name it "Anticheat"
-
 local function isInArray(array, find)
 	local found = false
 	for i, v in pairs(array) do
